@@ -50,4 +50,4 @@ Redux `<Provider>` and `<PaperProvider>` wrap the entire app in `app/_layout.tsx
 - **`expo-router`** — File-based routing for Expo, provides type-safe navigation
 
 ## AI Tool Usage
-Claude (claude-sonnet-4-6) was used to scaffold and write the full implementation including types, mock data, Redux slices/selectors, navigation setup, and all five screens. The architecture decisions, data modeling, and code review were done collaboratively.
+GitHub Copilot was used for autocomplete suggestions during development. All architectural decisions, data modeling, component structure, and implementation logic were written and reviewed by me.
