@@ -88,4 +88,4 @@ Passing `deviceId` as a search param to the create screen felt cleaner than tryi
 
 ## AI Tool Usage
 
-I used GitHub Copilot for autocomplete while writing — mostly for boilerplate like `StyleSheet.create` blocks and repetitive prop patterns. The architecture, data model, selector logic, and product decisions were mine.
+I used GitHub Copilot for tab-completion on repetitive patterns — things like `StyleSheet.create` blocks, switch-case exhaustiveness, and slice boilerplate. All architecture decisions, data modelling, selector design, and product thinking were done by me.
