@@ -85,7 +85,7 @@ export default function CreateServiceRequestScreen() {
     const now = new Date().toISOString();
     await dispatch(
       createServiceRequest({
-        id: `sr_${Date.now()}`,
+        id: `sr_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
         deviceId,
         title: form.title.trim(),
         description: form.description.trim(),
@@ -97,7 +97,7 @@ export default function CreateServiceRequestScreen() {
         updatedAt: now,
         activityLog: [
           {
-            id: `al_${Date.now()}`,
+            id: `al_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
             timestamp: now,
             message: 'Service request created.',
             type: 'status_change',

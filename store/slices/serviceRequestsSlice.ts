@@ -44,7 +44,7 @@ const serviceRequestsSlice = createSlice({
         req.status = status;
         req.updatedAt = new Date().toISOString();
         req.activityLog.push({
-          id: `al_${Date.now()}`,
+          id: `al_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
           timestamp: new Date().toISOString(),
           message: logMessage,
           type: 'status_change',
@@ -57,7 +57,7 @@ const serviceRequestsSlice = createSlice({
       if (req) {
         req.updatedAt = new Date().toISOString();
         req.activityLog.push({
-          id: `al_${Date.now()}`,
+          id: `al_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
           timestamp: new Date().toISOString(),
           message: note,
           type: 'note',

@@ -1,5 +1,6 @@
 import { createSelector } from '@reduxjs/toolkit';
 import { RootState } from '../index';
+import { ServiceRequestStatus } from '../../types';
 
 const selectDeviceItems = (state: RootState) => state.devices.items;
 const selectSearchQuery = (state: RootState) => state.devices.searchQuery;
@@ -24,7 +25,7 @@ export const selectOpenRequestCountByDevice = createSelector(
   (requests) => {
     const counts: Record<string, number> = {};
     requests.forEach((r) => {
-      if (r.status === 'open' || r.status === 'in_progress') {
+      if (r.status === ServiceRequestStatus.Open || r.status === ServiceRequestStatus.InProgress) {
         counts[r.deviceId] = (counts[r.deviceId] ?? 0) + 1;
       }
     });
