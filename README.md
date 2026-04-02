@@ -6,9 +6,9 @@ A mobile app built with **React Native + Expo** that allows IoT equipment operat
 
 ## Screenshots
 
-| Equipment List | Device Detail | Create Service Request |
-|:---:|:---:|:---:|
-| ![Equipment List](assets/screenshots/equipment-list.png) | ![Device Detail](assets/screenshots/device-detail.png) | ![Create Request](assets/screenshots/create-request.png) |
+| Equipment List | Device Detail | Create Service Request | Dashboard |
+|:---:|:---:|:---:|:---:|
+| ![Equipment List](assets/screenshots/equipment-list.png) | ![Device Detail](assets/screenshots/device-detail.png) | ![Create Request](assets/screenshots/create-request.png) | ![Dashboard](assets/screenshots/dashboard.png) |
 
 ---
 
