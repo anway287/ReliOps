@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//private/tmp/**)",
+      "Bash(rm -rf expo-app)",
+      "Bash(npx create-expo-app@latest expo-app --template tabs)",
+      "Bash(rsync -a --exclude='.git' /tmp/expo-app/ /Users/anwayatkekar/Downloads/take-home-test/)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)"
+    ]
+  }
+}
